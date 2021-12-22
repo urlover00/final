@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Volition</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/reg.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+<body>
+	<div id="navbar">
+		<a href="#" class="menu-bars" id="show-menu">
+			<i class="fas fa-align-justify"></i>
+		</a>
+		<div class="enter">
+		<button class="author" id="loginBtn" onclick="logPage()">Login</button>
+		<button class="author" id="regBtn" onclick="regPage()">Register</button>
+		</div>
+	</div>
+	<nav id="nav-menu">
+		<ul id="nav-menu-items">
+		<div id="navbar-toggle">
+			<a href="#" class="menu-bars" id="hide-menu">
+				<i class="fas fa-align-justify"></i>
+			</a>
+			<a href="#"><h1>Volition</h1></a>
+		</div>
+		<hr>
+		<div class="nav-section">
+			<li class="nav-text"><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+			<li class="nav-text"><a href="about.html"><i class="far fa-address-card"></i>About Us</a></li>
+			<li class="nav-text"><a href="#"><i class="far fa-question-circle"></i>FAQ</a></li>
+			<li class="nav-text"><a href="art.html"><i class="fas fa-bookmark"></i>Art</a></li>
+		</div>
+		</ul>
+	</nav>
+  <div class="container">
+	<div class="header">
+		<h2>Enter in Account</h2>
+	</div>
+	 <form role="form" onsubmit="signIn(event);" autocomplete="off">
+		<div class="form-control">
+			 <input type="email" name="email" id="email" placeholder="Email Address" required>
+		</div>
+		<div class="form-control">
+			<input type="password" name="pwd" id="pwd" placeholder="Password" required>
+		</div>
+		<button type="submit">Sign In</button>
+	</form>
+	<p>Don't have an account? <a href="register.html">Sign Up</a> here</p>
+</div>
+
+
+<script type="text/javascript" src="./js/reg.js"></script>
+</body>
+<script type="text/javascript" src="./js/main.js"></script>
+
+</html>
